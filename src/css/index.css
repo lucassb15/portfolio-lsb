@@ -288,7 +288,6 @@ a {
 }
 
 .preloader {
-  align-items: center;
   background: var(--background-color); /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -303,11 +302,11 @@ a {
     var(--background-color)
   );
   display: flex;
-  height: 100vh;
-  justify-content: center;
-  left: 0;
+  align-items: center;
   position: fixed;
-  top: 0;
+  height: 100vh;
+  margin-left: 20px;
+  justify-content: center;
   transition: opacity 0.2s linear;
   width: 100%;
   z-index: 2;
@@ -351,6 +350,14 @@ a {
 }
 .img-box-card img {
   border-bottom: 4px solid #2ed8e1;
+}
+.img-box-card-trip {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.img-box-card-trip img {
+    border-bottom: 4px solid #267fd9;
 }
 
 .icons-slide {
