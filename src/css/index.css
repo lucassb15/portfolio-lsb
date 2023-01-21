@@ -60,12 +60,14 @@ body {
   padding: 70px;
   margin-top: 30px;
 }
-.letter-logo {
-  color: rgb(221, 221, 221);
+.logo-letters {
+  color: #dddddd;
   letter-spacing: -8px;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-left: 8px;
+  filter: drop-shadow(0px 0px 1px var(--lighter-color));
 }
 .navbar {
   overflow: hidden;
@@ -367,17 +369,15 @@ a {
 .img-box-card-mario img {
   border-bottom: 4px solid #ff0021;
 }
-.img-box-card-calculadora  {
+.img-box-card-calculadora {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 .img-box-card-calculadora img {
   border-bottom: 4px solid;
-  border-image: linear-gradient(to right, #090036e0, #4e0979d6,#ff00b5cd ) 1;
+  border-image: linear-gradient(to right, #090036e0, #4e0979d6, #ff00b5cd) 1;
 }
-
-
 
 .icons-slide {
   display: flex;
@@ -473,4 +473,52 @@ a {
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (max-width: 370px) and (min-width: 300px) {
+  .img-box-card img {
+    border-bottom: 4px solid #2ed8e1;
+    width: 220px;
+    height: max-content;
+    object-fit: fill;
+  }
+  .img-box-card-trip {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+   
+  }
+  .img-box-card-trip img {
+    border-bottom: 4px solid #267fd9;
+    width: 220px;
+    height: max-content;
+    object-fit: fill;
+  }
+  
+    
+  .img-box-card-mario {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+   
+  }
+  .img-box-card-mario img {
+    border-bottom: 4px solid #ff0021;
+    width: 220px;
+    height: max-content;
+    object-fit: fill;
+  }
+  .img-box-card-calculadora {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .img-box-card-calculadora img {
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, #090036e0, #4e0979d6, #ff00b5cd) 1;
+    width: 220px;
+    height: max-content;
+    object-fit: fill;
+  }
+  
 }
