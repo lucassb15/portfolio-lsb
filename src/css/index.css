@@ -475,7 +475,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 370px) and (min-width: 300px) {
+@media only screen and (max-width: 400px) and (min-width: 290px) {
   .img-box-card img {
     border-bottom: 4px solid #2ed8e1;
     width: 220px;
