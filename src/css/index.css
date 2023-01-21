@@ -373,7 +373,7 @@ a {
   user-select: none;
 }
 .img-box-card-calculadora img {
-  border-bottom: solid;
+  border-bottom: 4px solid;
   border-image: linear-gradient(to right, #090036e0, #4e0979d6,#ff00b5cd ) 1;
 }
 
