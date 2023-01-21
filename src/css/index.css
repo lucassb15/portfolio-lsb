@@ -475,19 +475,20 @@ a {
   }
 }
 
-@media (min-width: 290px) {
+@media (max-width: 350px) {
 
   .img-box-card img {
     border-bottom: 4px solid #2ed8e1;
     width: 220px;
     height: max-content;
     object-fit: fill;
+    border: 1px solid red;
   }
   .img-box-card-trip {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-   
+    border: 1px solid red;
   }
   .img-box-card-trip img {
     border-bottom: 4px solid #267fd9;
