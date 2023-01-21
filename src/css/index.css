@@ -475,10 +475,11 @@ a {
   }
 }
 
-@media only screen and (max-width: 400px) and (min-width: 290px) {
+@media only screen and (max-width: 440px) and (min-width: 290px) {
+
   .img-box-card img {
     border-bottom: 4px solid #2ed8e1;
-    width: 220px;
+    width: 100%;
     height: max-content;
     object-fit: fill;
   }
@@ -490,7 +491,7 @@ a {
   }
   .img-box-card-trip img {
     border-bottom: 4px solid #267fd9;
-    width: 220px;
+    width:  100%;
     height: max-content;
     object-fit: fill;
   }
