@@ -476,19 +476,16 @@ a {
 }
 
 @media (max-width: 600px) {
-
   .img-box-card img {
     border-bottom: 4px solid #2ed8e1;
     width: 262px;
     height: max-content;
     object-fit: fill;
-    
   }
   .img-box-card-trip {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    
   }
   .img-box-card-trip img {
     border-bottom: 4px solid #267fd9;
@@ -496,13 +493,11 @@ a {
     height: max-content;
     object-fit: fill;
   }
-  
-    
+
   .img-box-card-mario {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-   
   }
   .img-box-card-mario img {
     border-bottom: 4px solid #ff0021;
@@ -522,5 +517,4 @@ a {
     height: max-content;
     object-fit: fill;
   }
-  
 }
