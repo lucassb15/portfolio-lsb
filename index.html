@@ -28,7 +28,7 @@
     <div class="navbar">
         <h1 class="logo-letters">LSB</h1>
         <div>
-            <a class="title-text" href="">Contato</a>
+            <a class="title-text" href="#contact">Contato</a>
             <a class="title-text" href="#projetcs">Projetos</a>
         </div>
     </div>
@@ -63,7 +63,7 @@
                             </div>
                             <div class="info-box">
                                 <div class="sub-title">
-                                    <p><span style="color: #50e6ff;">BrandMonitor</span><br> Teste de estágio <br>
+                                    <p><span style="color: #50e6ff; font-weight: 600;">BrandMonitor</span><br> Teste de estágio <br>
                                         Página de
                                         cadastros de usuários</p>
                                 </div>
@@ -155,8 +155,54 @@
     </section>
 
     <!-- CONTACTS -->
-    <section class="container">
-        <h1 class="title-text" style="text-align: center;">CONTACT - COMING SOON</h1>
+    <section id="contact" class="container">
+        <div class="contact-container">
+            <!-- Sobre mim -->
+            <div class="contact-box">
+                <div class="me-infos">
+                    <h1 class="title-text contact-mb" style="font-size: 1.5rem; margin-bottom: 15px; font-weight: 400;">CONTATO</h1>
+                    <p class="me-text">Olá, eu sou Lucas Soares Barbosa, tenho 22 anos.<br>Estou graduando em Análise e desenvolvimento de Sistemas pela Faculdade de Tecnologia de Guaratinguetá (FATEC)</p>
+                </div>
+
+                <div class="contact-infos">
+                    <h3 class="sub-title contact-mb"><strong>Endereço</strong></h3>
+                    <p class="me-text">Aparecida - São Paulo</p>
+                    <h3 class="sub-title contact-mb"><strong>Telefone</strong></h3>
+                    <p class="me-text">+55 (12) 9 9646-6913</p>
+                    <h3 class="sub-title contact-mb"><strong>E-mail</strong></h3>
+                    <p class="me-text">soares.lucasbrs@gmail.com</p>
+                </div>
+            </div>
+            <!-- Formulario -->
+            <div class="form-box">
+                <div class="form-title">
+                <h1 class="title-text" style="font-size: 1rem; font-weight: 400;" >Formulário Para Contato</h1>
+                </div>
+
+                <form action="https://formsubmit.co/soares.lucasbrs@gmail.com" method="POST">
+                    
+                    <div class="col-form">
+                        <label class="sub-title" for="name">Seu nome</label>
+                        <input type="text" name="name" autocomplete="none" required>
+                    </div>
+                    <div class="col-form">
+                        <label class="sub-title" for="phone">Seu telefone</label>
+                        <input type="tel" name="phone" autocomplete="none" required>
+                    </div>
+                    <div class="col-form">
+                        <label class="sub-title" for="email">Seu e-mail</label>
+                        <input type="email" name="email" autocomplete="none" required>
+                    </div>
+                    <div class="col-form">
+                        <label class="sub-title" for="message">Mensagem</label>
+                        <textarea name="message" rows="1" cols="25" autocomplete="none" required></textarea>
+                    </div class="col-form">
+                    <div class="col-form-button">
+                        <button class="form-button" type="submit">ENVIAR MENSAGEM <i class="icon-send"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
     <!-- Socials Fixed menu -->
     <section>
@@ -168,7 +214,7 @@
             <a href="https://www.instagram.com/lukas_soares019/"><i class="icon-instagram"></i></a> <!-- Instagram -->
         </div>
         <div class="scroll-bar">
-            <span><span id="active-line" style="letter-spacing: -1.35px;">││</span> SCROLL <span
+            <span><span id="active-line" style="letter-spacing: -1.4px;">││</span> SCROLL <span
                     style="letter-spacing: -1.3px;">││</span></span>
         </div>
 
