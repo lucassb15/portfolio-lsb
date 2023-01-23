@@ -91,6 +91,7 @@ textarea {
   top: 0;
   width: 100%;
   padding: 1.4rem;
+  z-index: 8;
 }
 
 .navbar a {
@@ -217,6 +218,7 @@ a {
 
 .blaze-slider.dragging .blaze-track {
   cursor: grabbing;
+  z-index: 1;
 }
 .blaze-track > * {
   min-height: 350px;
@@ -319,7 +321,7 @@ button.blaze-next {
   justify-content: center;
   transition: opacity 0.2s linear;
   width: 100%;
-  z-index: 2;
+  z-index: 10;
   opacity: 1;
   transform: opacity 1s linear;
 }
