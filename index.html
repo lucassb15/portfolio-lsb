@@ -15,7 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/blaze-slider@latest/dist/blaze.css" rel="stylesheet">
-
+    <!-- scrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
 
 </head>
 
@@ -31,9 +35,10 @@
             <a class="title-text" href="#contact">Contato</a>
             <a class="title-text" href="#projetcs">Projetos</a>
         </div>
+
     </div>
     <!-- HOME-->
-    <main class="container">
+    <main class="container reveal-name">
         <section class="m-top w-max section-home">
 
             <!-- info-me-c -->
@@ -51,7 +56,7 @@
     <section id="projetcs" class="container">
 
         <!-- slide -->
-        <div class="blaze-slider">
+        <div class="blaze-slider reveal-name">
             <div class="blaze-container">
                 <div class="blaze-track-container">
                     <div class="blaze-track">
@@ -63,7 +68,8 @@
                             </div>
                             <div class="info-box">
                                 <div class="sub-title">
-                                    <p><span style="color: #50e6ff; font-weight: 600;">BrandMonitor</span><br> Teste de estágio <br>
+                                    <p><span style="color: #50e6ff; font-weight: 600;">BrandMonitor</span><br> Teste de
+                                        estágio <br>
                                         Página de
                                         cadastros de usuários</p>
                                 </div>
@@ -71,7 +77,8 @@
                                     <i class="icon-node-dot-js">
                                     </i> <i class="icon-mongodb"></i>
                                 </div>
-                                <a href="https://github.com/lucassb15/teste-bm-lucassb15" target="_blank"><button>Ver
+                                <a href="https://github.com/lucassb15/teste-bm-lucassb15" target="_blank"><button
+                                        name="Ver projeto">Ver
                                         projeto<i class="icon-eye"></i></button></a>
                             </div>
                         </div>
@@ -156,15 +163,17 @@
 
     <!-- CONTACTS -->
     <section id="contact" class="container">
-        <div class="contact-container">
+        <div class="contact-container reveal-name">
             <!-- Sobre mim -->
             <div class="contact-box">
                 <div class="me-infos">
-                    <h1 class="title-text contact-mb" style="font-size: 1.5rem; margin-bottom: 15px; font-weight: 400;">CONTATO</h1>
-                    <p class="me-text">Olá, eu sou Lucas Soares Barbosa, tenho 22 anos.<br>Estou graduando em Análise e desenvolvimento de Sistemas pela Faculdade de Tecnologia de Guaratinguetá (FATEC)</p>
+                    <h1 class="title-text contact-mb" style="font-size: 1.5rem; margin-bottom: 15px; font-weight: 400;">
+                        CONTATO</h1>
+                    <p class="me-text">Olá, eu sou Lucas Soares Barbosa, tenho 22 anos.<br>Estou graduando em Análise e
+                        desenvolvimento de Sistemas pela Faculdade de Tecnologia de Guaratinguetá (FATEC)</p>
                 </div>
 
-                <div class="contact-infos">
+                <div class="contact-infos reveal-name">
                     <h3 class="sub-title contact-mb"><strong>Endereço</strong></h3>
                     <p class="me-text">Aparecida - São Paulo</p>
                     <h3 class="sub-title contact-mb"><strong>Telefone</strong></h3>
@@ -174,13 +183,13 @@
                 </div>
             </div>
             <!-- Formulario -->
-            <div class="form-box">
+            <div class="form-box reveal-name">
                 <div class="form-title">
-                <h1 class="title-text" style="font-size: 1rem; font-weight: 400;" >Formulário Para Contato</h1>
+                    <h1 class="title-text" style="font-size: 1rem; font-weight: 400;">Formulário Para Contato</h1>
                 </div>
 
                 <form action="https://formsubmit.co/soares.lucasbrs@gmail.com" method="POST">
-                    
+
                     <div class="col-form">
                         <label class="sub-title" for="name">Seu nome</label>
                         <input type="text" name="name" autocomplete="none" required>
@@ -198,7 +207,8 @@
                         <textarea name="message" rows="1" cols="25" autocomplete="none" required></textarea>
                     </div class="col-form">
                     <div class="col-form-button">
-                        <button class="form-button" type="submit">ENVIAR MENSAGEM <i class="icon-send"></i></button>
+                        <button class="form-button" type="submit" data-trans-hey>ENVIAR MENSAGEM <i
+                                class="icon-send"></i></button>
                     </div>
                 </form>
             </div>
@@ -219,10 +229,24 @@
         </div>
 
     </section>
+
+    <!-- VLIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    
     <script src="https://unpkg.com/blaze-slider@latest/dist/blaze-slider.dev.js"></script>
     <script src="https://unpkg.com/blaze-slider@latest/dist/blaze-slider.min.js"></script>
     <script src="./src/js/index.js"></script>
-
 </body>
 
 </html>
