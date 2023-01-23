@@ -1,0 +1,43 @@
+@media (max-width: 480px) {
+    .img-box-card img {
+      border-bottom: 4px solid #2ed8e1;
+      width: 270px;
+      height: max-content;
+      object-fit: fill;
+    }
+    .img-box-card-trip {
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .img-box-card-trip img {
+      border-bottom: 4px solid #267fd9;
+      width: 270px;
+      height: max-content;
+      object-fit: fill;
+    }
+  
+    .img-box-card-mario {
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .img-box-card-mario img {
+      border-bottom: 4px solid #ff0021;
+      width: 270px;
+      height: max-content;
+      object-fit: fill;
+    }
+    .img-box-card-calculadora {
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .img-box-card-calculadora img {
+      border-bottom: 4px solid;
+      border-image: linear-gradient(to right, #090036e0, #4e0979d6, #ff00b5cd) 1;
+       width: 270px;
+      height: max-content;
+      object-fit: fill;
+    }
+  }
