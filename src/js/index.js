@@ -1,8 +1,8 @@
-
 window.addEventListener("scroll", () => { showmenu() });
 var line = document.getElementById('active-line');
 line.style.visibility = 'hidden';
 showmenu = () => {
+  
     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
         line.style.visibility = "visible";
     } else {
@@ -61,3 +61,5 @@ blazeSlider.onSlide(
         });
     }
 );
+
+ScrollReveal().reveal('.reveal-name', { delay: 300 });
