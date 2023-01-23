@@ -23,7 +23,7 @@ const fadeOutEffect = setInterval(() => {
       clearInterval(fadeOutEffect);
       preloader.style.display = 'none';
     }
-  }, 500);
+  }, 400);
   
 
 
