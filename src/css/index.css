@@ -275,13 +275,10 @@ a {
   background-position: center;
   background-size: 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath fill='mediumpurple' d='M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z'/%3E%3C/svg%3E");
-  transition: width 0.4s;
-  filter: drop-shadow(4px 6px 9px #000000);
 }
-.blaze-next:hover,
-.blaze-prev:hover {
-  width: 22px;
-  transition: 0.4s;
+button.blaze-prev,
+button.blaze-next {
+  filter: drop-shadow(4px 4px 2px #000000);
 }
 .blaze-next {
   transform: rotate(180deg);
@@ -297,7 +294,7 @@ a {
   background: var(--box-color);
   cursor: pointer;
   transition: transform 200ms ease, background-color 300ms ease;
-  box-shadow: 4px 6px 9px #000000;
+  box-shadow: 4px 4px 13px #000000;
 }
 
 .preloader {
