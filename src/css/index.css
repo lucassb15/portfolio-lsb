@@ -54,6 +54,13 @@ body {
   background-color: #bb86fc;
   border-radius: 10px;
 }
+
+input:focus,
+textarea {
+  resize: none;
+  outline: none;
+}
+
 /*  */
 
 .container {
@@ -248,11 +255,13 @@ a {
   background: hsl(0deg, 0%, 15%);
   cursor: pointer;
   transition: transform 200ms ease, background-color 300ms ease;
+  
 }
 
 .blaze-pagination button.active {
   background: mediumpurple;
   transform: scale(1.3);
+  
 }
 /* arrow pagination slide */
 .blaze-next,
@@ -267,6 +276,7 @@ a {
   background-size: 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath fill='mediumpurple' d='M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z'/%3E%3C/svg%3E");
   transition: width 0.4s;
+  filter: drop-shadow(4px 6px 9px #000000);
 }
 .blaze-next:hover,
 .blaze-prev:hover {
@@ -287,6 +297,7 @@ a {
   background: var(--box-color);
   cursor: pointer;
   transition: transform 200ms ease, background-color 300ms ease;
+  box-shadow: 4px 6px 9px #000000;
 }
 
 .preloader {
@@ -325,6 +336,8 @@ a {
   text-align: center;
   gap: 0.5rem;
   overflow: hidden;
+  box-shadow: -5px 5px 8px 0px #000000;
+  margin: 10px;
 }
 
 .img-box img {
@@ -344,6 +357,10 @@ a {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+ 
+}
+.info-box button {
+  box-shadow: 4px 6px 9px #000000;
 }
 .img-box-card {
   -webkit-user-select: none;
@@ -410,8 +427,101 @@ a {
   font-size: 19px;
   font-weight: 100;
 }
-/* loading icon */
 
+/* CONTACT */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+.contact-mb {
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+.form-box {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 90%;
+  box-shadow: -8px 7px 12px #000000;
+}
+.form-box form {
+  width: 100%;
+}
+.col-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.form-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.contact-label {
+  color: #e2e2e2;
+  font-size: var(--font-size-subtitle);
+}
+.me-text {
+  color: #e2e2e2;
+  font-size: var(--font-size-text);
+}
+.col-form input {
+  border: none;
+  border-bottom: 1px solid #454545;
+  background-color: transparent;
+
+  color: #e2e2e2;
+}
+.col-form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #454545;
+  color: var(--lighter-color);
+}
+.col-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.form-button {
+  background-color: transparent;
+  color: #e2e2e2;
+  border: none;
+  width: 180px;
+  margin-top: 15px;
+  padding: 0.7rem;
+  cursor: pointer;
+  box-shadow: 4px 6px 9px #000000;
+  transition: color 0.5s;
+}
+.form-button:hover {
+  color: var(--text-color);
+}
+
+/* loading icon */
 #loader {
   left: 50%;
   top: 50%;
@@ -475,10 +585,10 @@ a {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .img-box-card img {
     border-bottom: 4px solid #2ed8e1;
-    width: 268px;
+    width: 270px;
     height: max-content;
     object-fit: fill;
   }
@@ -489,7 +599,7 @@ a {
   }
   .img-box-card-trip img {
     border-bottom: 4px solid #267fd9;
-    width: 268px;
+    width: 270px;
     height: max-content;
     object-fit: fill;
   }
@@ -501,7 +611,7 @@ a {
   }
   .img-box-card-mario img {
     border-bottom: 4px solid #ff0021;
-    width: 268px;
+    width: 270px;
     height: max-content;
     object-fit: fill;
   }
@@ -513,7 +623,7 @@ a {
   .img-box-card-calculadora img {
     border-bottom: 4px solid;
     border-image: linear-gradient(to right, #090036e0, #4e0979d6, #ff00b5cd) 1;
-    width: 268px;
+     width: 270px;
     height: max-content;
     object-fit: fill;
   }
