@@ -1,43 +1,76 @@
 @media (max-width: 480px) {
-    .img-box-card img {
-      border-bottom: 4px solid #2ed8e1;
-      width: 270px;
-      height: max-content;
-      object-fit: fill;
-    }
-    .img-box-card-trip {
-      -webkit-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-    .img-box-card-trip img {
-      border-bottom: 4px solid #267fd9;
-      width: 270px;
-      height: max-content;
-      object-fit: fill;
-    }
-  
-    .img-box-card-mario {
-      -webkit-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-    .img-box-card-mario img {
-      border-bottom: 4px solid #ff0021;
-      width: 270px;
-      height: max-content;
-      object-fit: fill;
-    }
-    .img-box-card-calculadora {
-      -webkit-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-    .img-box-card-calculadora img {
-      border-bottom: 4px solid;
-      border-image: linear-gradient(to right, #090036e0, #4e0979d6, #ff00b5cd) 1;
-       width: 270px;
-      height: max-content;
-      object-fit: fill;
-    }
+  .img-box-card img {
+    border-bottom: 4px solid #2ed8e1;
+    width: 290px;
+    height: max-content;
+    object-fit: fill;
   }
+  .img-box-card-trip {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .img-box-card-trip img {
+    border-bottom: 4px solid #267fd9;
+    width: 290px;
+    height: max-content;
+    object-fit: fill;
+  }
+
+  .img-box-card-mario {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .img-box-card-mario img {
+    border-bottom: 4px solid #ff0021;
+    width: 290px;
+    height: max-content;
+    object-fit: fill;
+  }
+  .img-box-card-calculadora {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .img-box-card-calculadora img {
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, #090036e0, #4e0979d6, #ff00b5cd) 1;
+    width: 290px;
+    height: max-content;
+    object-fit: fill;
+  }
+}
+
+@media (min-width: 700px) {
+  /* HOME */
+  .home-title-text {
+    font-size: 9rem;
+  }
+  .home-sub-text {
+    font-size: 0.7rem;
+  }
+  .text-dsk-1 {
+    margin-right: 260px !important;
+    
+  }
+  .text-dsk-2 {
+    margin-right: -150px !important;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .contact-box {
+    display: flex;
+    width: 35%;
+  }
+  .form-box {
+    width: 45%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+}
