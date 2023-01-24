@@ -292,7 +292,7 @@ button.blaze-next {
   background: var(--box-color);
   cursor: pointer;
   transition: transform 200ms ease, background-color 300ms ease;
-  box-shadow: 4px 4px 13px #000000;
+  box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.37);
 }
 
 /* Slides Containers contents */
@@ -304,7 +304,7 @@ button.blaze-next {
   text-align: center;
   gap: 0.5rem;
   overflow: hidden;
-  box-shadow: -5px 5px 8px 0px #000000;
+  box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, 0.486);
   margin: 10px;
 }
 
@@ -383,6 +383,7 @@ button.blaze-next {
   padding: 0.8rem;
   cursor: pointer;
   transition: background-color 0.26s;
+  margin-bottom: 20px;
 }
 .info-box button:hover {
   background-color: #252525;
@@ -390,7 +391,6 @@ button.blaze-next {
 }
 
 .info-box button i {
-  margin-left: 5px;
   font-size: 19px;
   font-weight: 100;
 }
